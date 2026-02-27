@@ -1,0 +1,59 @@
+# Main background (leave empty for terminal transparency)
+theme[main_bg]=""
+theme[main_fg]="#c0caf5"
+
+# Box titles and outlines
+theme[title]="#ff007c"
+theme[cpu_box]="#ff007c"
+theme[mem_box]="#ff007c"
+theme[net_box]="#ff007c"
+theme[proc_box]="#ff007c"
+theme[div_line]="#414868"
+
+# Highlight and selected items
+theme[hi_fg]="#00ffff"
+theme[selected_bg]="#00ffff"
+theme[selected_fg]="#000000"
+theme[inactive_fg]="#414868"
+theme[graph_text]="#00ffff"
+theme[meter_bg]="#15161e"
+theme[proc_misc]="#00ffff"
+
+# --- NEON GRADIENTS (Cyan -> Purple -> Pink) ---
+
+# Temperature graph
+theme[temp_start]="#00ffff"
+theme[temp_mid]="#b300b3"
+theme[temp_end]="#ff007c"
+
+# CPU graph
+theme[cpu_start]="#00ffff"
+theme[cpu_mid]="#b300b3"
+theme[cpu_end]="#ff007c"
+
+# Memory meters
+theme[free_start]="#00ffff"
+theme[free_mid]="#b300b3"
+theme[free_end]="#ff007c"
+theme[cached_start]="#00ffff"
+theme[cached_mid]="#7aa2f7"
+theme[cached_end]="#7aa2f7"
+theme[available_start]="#00ffff"
+theme[available_mid]="#b300b3"
+theme[available_end]="#ff007c"
+theme[used_start]="#00ffff"
+theme[used_mid]="#b300b3"
+theme[used_end]="#ff007c"
+
+# Download / Upload graphs
+theme[download_start]="#00ffff"
+theme[download_mid]="#b300b3"
+theme[download_end]="#ff007c"
+theme[upload_start]="#ff007c"
+theme[upload_mid]="#b300b3"
+theme[upload_end]="#00ffff"
+
+# Process box gradients
+theme[process_start]="#00ffff"
+theme[process_mid]="#b300b3"
+theme[process_end]="#ff007c"

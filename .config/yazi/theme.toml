@@ -1,0 +1,51 @@
+# Yazi Cyberpunk Theme (0.4+)
+
+[status]
+separator_open  = ""
+separator_close = ""
+
+# Mode
+mode_normal = { fg = "#1a1b26", bg = "#00ffff", bold = true }
+mode_select = { fg = "#1a1b26", bg = "#ff007c", bold = true }
+mode_unset  = { fg = "#1a1b26", bg = "#c0caf5", bold = true }
+
+# Permissions
+perm_type = { fg = "#00ffff" }
+perm_read = { fg = "#00ffff" }
+perm_write = { fg = "#ff007c" }
+perm_exec  = { fg = "#9ece6a" }
+perm_sep   = { fg = "#414868" }
+
+# Progress / Percentage
+progress_label  = { fg = "#ffffff", bold = true }
+progress_normal = { fg = "#00ffff", bg = "#1a1b26" }
+progress_error  = { fg = "#ff007c", bg = "#1a1b26" }
+
+# Right side
+# These might be needed for newer yazi versions to ensure text contrast
+# We use reversed or explicit bg/fg
+percentage_normal = { fg = "#1a1b26", bg = "#00ffff", bold = true }
+position_normal   = { fg = "#1a1b26", bg = "#00ffff", bold = true }
+
+[manager]
+cwd = { fg = "#00ffff", italic = true }
+
+# Selection
+hovered         = { fg = "#1a1b26", bg = "#00ffff" }
+selection       = { fg = "#1a1b26", bg = "#ff007c" }
+find_keyword    = { fg = "#ffff00", italic = true }
+find_position   = { fg = "#ff007c", bg = "reset", italic = true }
+
+# File-specific styles
+[filetype]
+rules = [
+	{ mime = "image/*", fg = "#00ffff" },
+	{ mime = "video/*", fg = "#ff007c" },
+	{ mime = "audio/*", fg = "#ff007c" },
+	{ mime = "application/zip", fg = "#ff007c" },
+	{ mime = "application/x-tar", fg = "#ff007c" },
+	{ mime = "application/x-bzip2", fg = "#ff007c" },
+	{ mime = "application/x-gzip", fg = "#ff007c" },
+	{ mime = "application/x-7z-compressed", fg = "#ff007c" },
+	{ mime = "application/x-rar", fg = "#ff007c" },
+]

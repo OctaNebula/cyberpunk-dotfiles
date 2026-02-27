@@ -1,0 +1,98 @@
+* {
+    border: none;
+    border-radius: 0;
+    /* This is why we installed that Nerd Font earlier! */
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-weight: bold;
+    font-size: 14px;
+    min-height: 0;
+}
+
+window#waybar {
+    background: rgba(10, 10, 15, 0.8);
+    color: #c0caf5;
+    border-bottom: 2px solid #ff007c;
+}
+
+tooltip {
+    background: rgba(10, 10, 15, 0.9);
+    border: 1px solid #0ff;
+}
+
+#workspaces button {
+    padding: 0 10px;
+    color: #565f89;
+    background: transparent;
+    transition: all 0.3s ease;
+}
+
+#workspaces button.active {
+    color: #0ff;
+    text-shadow: 0 0 5px #0ff;
+}
+
+#workspaces button:hover {
+    color: #ff007c;
+    background: rgba(255, 0, 124, 0.1);
+    text-shadow: 0 0 5px #ff007c;
+}
+
+#clock, #battery, #network, #pulseaudio, #tray, #cpu, #memory, #backlight {
+    padding: 0 15px;
+    color: #0abdc6;
+    transition: all 0.3s ease;
+}
+
+#clock:hover, #battery:hover, #network:hover, #pulseaudio:hover, #tray:hover, #cpu:hover, #memory:hover, #backlight:hover, #mpris:hover {
+    background: rgba(10, 189, 198, 0.1);
+    color: #0ff;
+    text-shadow: 0 0 8px #0ff;
+}
+
+#clock {
+    color: #ff007c;
+    text-shadow: 0 0 5px #ff007c;
+}
+
+#battery.charging, #battery.plugged {
+    color: #00ffff; /* Vibrant Cyan for charging */
+}
+
+#battery.critical:not(.charging) {
+    color: #ff007c; /* Pink for critical battery */
+    animation-name: blink;
+    animation-duration: 0.5s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+}
+
+@keyframes blink {
+    to {
+        background-color: #ff007c;
+        color: #050508;
+    }
+}
+
+/* --- MEDIA PLAYER --- */
+#mpris {
+    color: #00ffff;
+    font-weight: bold;
+    padding: 0 15px;
+    font-family: "JetBrainsMono Nerd Font";
+}
+
+#mpris.paused {
+    color: #ff007c;
+}
+
+#mpris.spotify {
+    color: #00ffff; /* Optional: Native Spotify Green, change to #00ffff if you want strict Netdeck colors! */
+}
+
+/* --- AUDIO VISUALIZER --- */
+#custom-caval, #custom-cavar {
+    color: #ff007c;
+    padding: 0 10px;
+    font-family: "JetBrainsMono Nerd Font";
+}

@@ -1,0 +1,7 @@
+allow_images=false
+display_generic=false
+width=600
+height=400
+halign=fill
+content_halign=fill
+# Using height instead of lines to maintain a fixed size

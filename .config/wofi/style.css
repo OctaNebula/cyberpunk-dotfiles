@@ -1,0 +1,90 @@
+* {
+    font-family: "JetBrainsMono Nerd Font", monospace;
+    font-size: 14px;
+    border-radius: 0px; 
+}
+
+/* The Power-On Surge Animation */
+@keyframes crt-surge {
+    0% { 
+        box-shadow: 0 0 0px rgba(255, 0, 124, 0); 
+    }
+    40% { 
+        /* Blinding flash when it powers on */
+        box-shadow: 0 0 30px 10px rgba(255, 0, 124, 1), 0 0 60px 20px rgba(255, 0, 124, 0.6); 
+    }
+    100% { 
+        /* The steady, heavy resting glow */
+        box-shadow: 0 0 15px 3px rgba(255, 0, 124, 0.8), 0 0 40px 10px rgba(255, 0, 124, 0.4); 
+    }
+}
+
+window {
+    margin: 0px;
+    background-color: #050508; 
+    border: 2px solid #ff007c; 
+    /* animation: crt-surge 0.6s ease-out forwards; */
+}
+
+#input {
+    margin: 5px;
+    padding: 2px 5px;
+    background-color: #000000;
+    border: 1px solid #ff007c;
+    color: #00ffff; /* Pure Cyan */
+    min-height: 28px;
+}
+
+#inner-box, #outer-box {
+    /* margin: 0px;                  /* Kill the outward push completely */
+    /* padding: 2px;                 /* Force the exact same spacing inward */
+    background-color: transparent;
+}
+
+#scroll {
+    margin: 5px;
+    overflow: visible; /* Allow glow to bleed out */
+}
+
+#scroll scrollbar {
+    background-color: transparent;
+}
+
+#scroll scrollbar slider {
+    background-color: transparent;
+}
+
+#scroll scrollbar button {
+    display: none;
+}
+
+/* For newer GTK versions */
+scrollbar {
+    opacity: 0;
+    width: 0px;
+}
+
+#entry {
+    padding: 2px 5px; 
+    margin: 0px;
+    overflow: visible; /* Allow glow to bleed out */
+    min-height: 24px;
+}
+
+#text {
+    color: #ff007c; /* Base unselected list text is Pink */
+    margin-left: 0px;
+}
+
+/* The Highlight */
+#entry:selected {
+    background-color: #00ffff; /* Pure Cyan */
+    border: none;
+    box-shadow: 0 0 15px 5px rgba(0, 255, 255, 0.6); /* Vibrant Cyan glow */
+}
+
+#entry:selected #text {
+    color: #000000; /* Inverted black text on the Cyan block */
+    font-weight: bold;
+}
+

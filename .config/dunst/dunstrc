@@ -1,0 +1,42 @@
+[global]
+    width = 350
+    height = 100
+    origin = top-right
+    offset = 15x15
+    notification_limit = 5
+
+    # --- THE RED LOADING BAR ---
+    timeout_indicator = yes
+
+    # --- THE CYBERPUNK SPACING ---
+    padding = 15
+    horizontal_padding = 15
+    frame_width = 2
+    frame_color = "#ff007c"
+    gap_size = 5
+
+    # --- THE COLORS ---
+    background = "#050508"
+    foreground = "#00ffff"
+    highlight = "#ff0000" # This forces the timeout indicator to be solid red
+
+    font = JetBrainsMono Nerd Font 11
+    corner_radius = 0
+    
+    # Matching your exact Mako text formatting
+    format = "<b><span foreground='#ff007c'>%s</span></b>\n%b"
+
+[urgency_normal]
+    timeout = 5
+
+[urgency_critical]
+    background = "#ff007c"
+    foreground = "#000000"
+    frame_color = "#00ffff"
+    timeout = 0
+    format = "<b>%s</b>\n%b"
+[osd]
+    appname = "OSD"
+    highlight = "#ff007c"
+    frame_color = "#ff007c"
+    format = "<b>%s</b>"
